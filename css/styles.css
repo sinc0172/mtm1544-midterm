@@ -183,3 +183,43 @@ h5 {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+/* styling the about section */
+#about {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-areas: 
+        "image title"
+        "image description"
+        "image link"
+        "image .";
+    gap: 20px;
+}
+
+#about h2 {
+    grid-area: title;
+    padding: 0px;
+}
+
+#about p {
+    grid-area: description;
+}
+
+#about a {
+    grid-area: link;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text);
+}
+
+#about a:hover, #about a:focus {
+    grid-area: link;
+    text-decoration: wavy underline;
+    color: var(--primary-color);
+}
+
+#about img {
+    grid-area: image;
+}
+
+/* styling the ramblings section */
