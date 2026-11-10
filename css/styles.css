@@ -388,6 +388,7 @@ footer table caption {
 footer table th {
     position: absolute;
     bottom: -100px;
+    left: -100px;
 }
 
 footer table td a {
