@@ -2,12 +2,26 @@
     box-sizing: border-box;
 }
 
+/* colour palette */
+:root {
+    --primary-color: #C24325;
+    --text: #3E2B23;
+    --page-background: #f5f2ef;
+
+    /* colour palette with oklch colour values */
+    --dark: oklch(0.3 0.1 50);
+    --button: oklch(0.7 0.1 50);
+    --hover: oklch(0.8 0.05 70);
+}
+
 /* typography */
 body {
     font-family: 'Inter', Helvetica, Arial, system-ui, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    background-color: var(--page-background);
+    color: var(--text);
 }
 
 h1, h2 {
@@ -16,6 +30,7 @@ h1, h2 {
     font-weight: 600;
     line-height: 1.2;
     text-wrap: balance;
+    color: var(--primary-color);
 }
 
 h3 {
@@ -25,6 +40,7 @@ h3 {
     line-height: 1.2;
     text-wrap: balance;
     text-transform: uppercase;
+    color: var(--dark);
 }
 
 h4 {
@@ -32,6 +48,7 @@ h4 {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.2;
+    color: var(--dark);
 }
 
 h5 {
@@ -39,4 +56,5 @@ h5 {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.2;
+    color: var(--dark);
 }
