@@ -267,3 +267,91 @@ h5 {
 #nov-3 {
     grid-area: second;
 }
+
+/* projects list & let's connect form */
+#bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "projects connect";
+}
+
+#projects-list {
+    grid-area: projects;
+    background-color: var(--secondary-color);
+    padding: 0 0 0 40px;
+}
+
+#projects-list li a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+#projects-list li a:hover, #projects-list li a:focus {
+    text-decoration: wavy underline;
+}
+
+#button-view-projects {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--page-background);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#button-view-projects:hover, #button-view-projects:focus {
+    background-color: var(--hover);
+    color: var(--text);
+    text-decoration: wavy underline;
+    text-decoration-color: var(--text);
+    border: 1px solid var(--text);
+}
+
+#contact {
+    grid-area: connect;
+    padding: 0 20px 40px 20px;
+}
+
+#contact input[type=text], #contact input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+#contact select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #b4b2b1;
+    background-color: #fefefe;
+}
+
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+}
+
+#contact button {
+    width: 100%;
+    border: none;
+    color: var(--page-background);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: 500;
+}
+
+#contact button:hover, #contact button:focus {
+    width: 100%;
+    border: 1px solid var(--text);
+    color: var(--text);
+    background-color: var(--hover);
+    text-decoration: wavy underline;
+    text-decoration-color: var(--text);
+    font-weight: 500;
+    padding: 15px
+}
