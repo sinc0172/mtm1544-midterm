@@ -467,3 +467,79 @@ footer table td a {
 #about-content a:hover, #about-content a:focus {
     text-decoration: wavy underline;
 }
+
+/* STYLING INDIVIDUAL PROJECT PAGES */
+#project-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    text-align: center;
+}
+
+#project-links a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#project-links a:hover, #project-links a:focus {
+    text-decoration: wavy underline;
+}
+
+#dirtypig, #mountadanac, #letstalk, #purefreshness {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+        "title first"
+        "list second";
+    gap: 5px;
+    padding: 20px;
+}
+
+#dirtypig h2, #mountadanac h2, #letstalk h2, #purefreshness h2 {
+    grid-area: title;
+    margin: 10px 0 0 40px;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+
+}
+
+.project-design {
+    grid-area: list;
+    margin: 20px;
+
+    list-style-type: none;
+    list-style-position: outside;
+    font-weight: 500;
+}
+
+#dirtypig-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#mountadanac-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#project-3 video {
+    width: 100%;
+}
+
+#letstalk-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#purefreshness-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
