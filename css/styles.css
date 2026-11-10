@@ -279,6 +279,8 @@ h5 {
 #projects-list {
     grid-area: projects;
     padding: 0 0 0 40px;
+    border-right-style: solid;
+    border-right-color: var(--text);
 }
 
 #projects-list li a {
@@ -310,8 +312,7 @@ h5 {
 
 #contact {
     grid-area: connect;
-    padding: 0 20px 40px 20px;
-    background-color: var(--secondary-color);
+    padding: 0 20px 40px 60px;
 }
 
 #contact input[type=text], #contact input[type=email] {
@@ -598,4 +599,9 @@ footer table td a {
     border-radius: 5px;
     padding: 10px;
     color: var(--page-background);
+}
+
+/* STYLING MAIN CONTACT PAGE */
+#main-contact {
+    background-color: var(--page-background);
 }
