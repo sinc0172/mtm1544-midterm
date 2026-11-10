@@ -394,3 +394,76 @@ footer table th {
 footer table td a {
     color: var(--secondary-color);
 }
+
+
+
+/* STYLING THE ABOUT PAGE */
+#about-content {
+    display: grid;
+    grid-template-columns: 500px 2fr;
+    grid-template-areas: 
+        "image title"
+        "image intro"
+        "image outside"
+        "image p"
+        "image fav"
+        "image list"
+        "image link";
+    gap: 5px;
+    padding: 20px 20px 40px 20px;
+}
+
+#about-content img {
+    grid-area: image;
+}
+
+#about-content h2 {
+    grid-area: title;
+    margin: 20px;
+}
+
+#about-content #intro {
+    grid-area: intro;
+    margin: 20px;
+}
+
+#outside-design {
+    grid-area: outside;
+    margin: 20px;
+}
+
+#about-content p {
+    grid-area: p;
+    margin: 20px;
+}
+
+#about-fav {
+    grid-area: fav;
+    margin: 20px;
+} 
+
+#about-content dl {
+    grid-area: list;
+    margin: 20px;
+}
+
+#about-content dt {
+    font-weight: 500;
+    color: var(--dark);
+    padding: 0 15px 0 0;
+}
+
+#about-content #projects-link {
+    grid-area: link;
+    margin: 20px;
+}
+
+#about-content a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#about-content a:hover, #about-content a:focus {
+    text-decoration: wavy underline;
+}
