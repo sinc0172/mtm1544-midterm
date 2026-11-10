@@ -271,14 +271,13 @@ h5 {
 /* projects list & let's connect form */
 #bottom-section {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-areas:
         "projects connect";
 }
 
 #projects-list {
     grid-area: projects;
-    background-color: var(--secondary-color);
     padding: 0 0 0 40px;
 }
 
@@ -312,6 +311,7 @@ h5 {
 #contact {
     grid-area: connect;
     padding: 0 20px 40px 20px;
+    background-color: var(--secondary-color);
 }
 
 #contact input[type=text], #contact input[type=email] {
@@ -354,4 +354,42 @@ h5 {
     text-decoration-color: var(--text);
     font-weight: 500;
     padding: 15px
+}
+
+/* styling the footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "copyright socials";
+    gap: 40px;
+
+    background-color: var(--primary-color);
+    color: var(--page-background);
+    padding: 40px 20px 20px 20px;
+}
+
+footer p {
+    grid-area: copyright;
+}
+
+footer table {
+    width: 100%;
+}
+footer table caption {
+    font-family: 'Momo Signature', cursive;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+footer table th {
+    position: absolute;
+    bottom: -100px;
+}
+
+footer table td a {
+    color: var(--secondary-color);
 }
