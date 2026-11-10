@@ -543,3 +543,59 @@ footer table td a {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* STYLING RAMBLINGS PAGE */
+#ramblings-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "title title title ."
+        "archives content content content";
+    gap: 20px;
+    padding: 0 0 60px 0;
+}
+
+#ramblings-title {
+    grid-area: title;
+    margin: 0 0 0 40px;
+    border-bottom-style: solid;
+    border-color: var(--dark);
+}
+
+#ramblings-title em {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#archives {
+    grid-area: archives;
+    margin: 0 0 0 40px;
+    padding: 20px;
+
+    background-color: var(--secondary-color);
+}
+
+#archives h3 {
+    margin: 0 0 0 10px;
+}
+
+#november {
+    grid-area: content;
+    display: grid;
+    gap: 10px;
+    padding: 0 20px 0 0;
+    margin: 0 0 0 20px;
+}
+
+#november article {
+    padding: 30px;
+    border-style: solid;
+    border-color: var(--dark);
+}
+
+#november article em {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--page-background);
+}
